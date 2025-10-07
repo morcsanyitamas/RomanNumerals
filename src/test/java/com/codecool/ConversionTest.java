@@ -12,21 +12,21 @@ class ConversionTest {
     }
 
     @Test
-    void shouldReturnIWhenDigitIs1AndDecimalPlaceIs1() {
+    void shouldReturnXWhenDigitIs1AndDecimalPlaceIs1() {
         Conversion conversion = new Conversion();
         StringBuilder result = conversion.getRomanSymbol('1', 1);
         assertEquals("X", result.toString());
     }
 
     @Test
-    void shouldReturnIWhenDigitIs1AndDecimalPlaceIs2() {
+    void shouldReturnCWhenDigitIs1AndDecimalPlaceIs2() {
         Conversion conversion = new Conversion();
         StringBuilder result = conversion.getRomanSymbol('1', 2);
         assertEquals("C", result.toString());
     }
 
     @Test
-    void shouldReturnIWhenDigitIs1AndDecimalPlaceIs3() {
+    void shouldReturnMWhenDigitIs1AndDecimalPlaceIs3() {
         Conversion conversion = new Conversion();
         StringBuilder result = conversion.getRomanSymbol('1', 3);
         assertEquals("M", result.toString());
