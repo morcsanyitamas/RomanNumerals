@@ -13,9 +13,22 @@ public class Conversion {
         put(1000, "M");
     }};
 
-    StringBuilder getRomanSymbol(char digit, int decimalPlace) {
-        throw new UnsupportedOperationException("Not implemented yet");
+    StringBuilder GetRomanSymbol(char digit, int decimalPlace) {
 
+        StringBuilder result = new StringBuilder();
+
+        // 4 vagy 9 -es eset
+        if () {
+            return new StringBuilder();
+        } else {
+            // 5-ös eset
+            if () {
+                result.append("");
+            }
+            // 1-2-3-6-7-8 eset
+            result.append("");
+        }
+        return result;
     }
 }
 
