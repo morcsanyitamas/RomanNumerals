@@ -31,4 +31,18 @@ class ConversionTest {
         StringBuilder result = conversion.getRomanSymbol('1', 3);
         assertEquals("M", result.toString());
     }
+
+    @Test
+    void shouldReturnIXWhenDigitIs9AndDecimalPlaceIs0() {
+        Conversion conversion = new Conversion();
+        StringBuilder result = conversion.getRomanSymbol('9', 0);
+        assertEquals("IX", result.toString());
+    }
+
+    @Test
+    void shouldReturnIVWhenDigitIs9AndDecimalPlaceIs0() {
+        Conversion conversion = new Conversion();
+        StringBuilder result = conversion.getRomanSymbol('4', 0);
+        assertEquals("IV", result.toString());
+    }
 }
